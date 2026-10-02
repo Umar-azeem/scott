@@ -1,0 +1,170 @@
+@import 'tailwindcss';
+
+@theme inline {
+  /* ─── Navy palette (new brand — full scale) ─── */
+  --color-navy-50: #f0f2f7;
+  --color-navy-100: #dfe3ee;
+  --color-navy-200: #c2c9dd;
+  --color-navy-300: #9aa4c2;
+  --color-navy-400: #6a7899;
+  --color-navy-500: #212843; /* BASE */
+  --color-navy-600: #1c2239;
+  --color-navy-700: #161b2e;
+  --color-navy-800: #0d1020;
+  --color-navy-900: #080a16;
+
+  /* Legacy alias names (kept so existing components still work) */
+  --color-navy-light-2: #f0f2f7;
+  --color-navy-light-1: #6a7899;
+  --color-navy-base: #212843;
+  --color-navy-dark-1: #161b2e;
+  --color-navy-dark-2: #0d1020;
+
+  /* Nerdstack palette (neutrals + brand tones remapped to navy) */
+  --color-ash-depth: #dfe3ee;
+  --color-linen-base: #f4f5f9;
+  --color-paper-cream: #f0f2f7;
+  --color-lift-white: #ffffff;
+  --color-midnight-ink: #0d1020;
+  --color-obsidian-depth: #080a16;
+  --color-graphite-lift: #161b2e;
+  --color-violet-quill: #212843;
+
+  /* Nerdstack accents / status (unchanged) */
+  --color-cache-sand: #f4e7c7;
+  --color-core-coral: #ed7472;
+  --color-packet-sky: #d7e9ff;
+  --color-syntax-mint: #ccfdcf;
+  --color-qubit-orchid: #cebffa;
+  --color-signal-amber: #d5ad4b;
+  --color-verdant-pass: #5cce63;
+  --color-latency-peach: #ffe1d6;
+
+  /* Semantic aliases */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-ring: var(--ring);
+
+  /* Fonts */
+  --font-sans: var(--font-stacksans), Arial, sans-serif;
+  --font-display: var(--font-headline), Arial, sans-serif;
+  --font-mono: var(--font-fragment-mono), ui-monospace, monospace;
+
+  /* Type scale */
+  --text-caption: 10px;
+  --text-body-sm: 13px;
+  --text-body: 16px;
+  --text-body-lg: 20px;
+  --text-heading-sm: 20px;
+  --text-heading: 32px;
+  --text-heading-lg: 40px;
+  --text-display-sm: 48px;
+  --text-display: 64px;
+  --text-display-xl: 88px;
+
+  /* Radius */
+  --radius-tag: 8px;
+  --radius-card: 20px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-card-soft: 0 4px 80px rgba(13, 16, 32, 0.08);
+  --shadow-dropdown: 0 4px 40px rgba(13, 16, 32, 0.08);
+}
+
+:root {
+  color-scheme: light;
+  --background: #f0f2f7;
+  --foreground: #0d1020;
+  --muted: rgba(106, 120, 153, 0.18);
+  --muted-foreground: #0d1020a3;
+  --card: #ffffff;
+  --border: rgba(33, 40, 67, 0.1);
+
+  --primary: #212843;
+  --primary-hover: #161b2e;
+  --primary-foreground: #ffffff;
+  --accent: #6a7899;
+  --ring: #6a7899;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--accent);
+    color: var(--foreground);
+  }
+}
+
+/* Motion */
+@keyframes ns-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes ns-fade-up {
+  0% { opacity: 0; transform: translateY(16px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes ns-draw {
+  from { stroke-dashoffset: var(--dash, 1000); }
+  to { stroke-dashoffset: 0; }
+}
+@keyframes ns-grow {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+@keyframes ns-pulse-halo {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.08); }
+}
+@keyframes ns-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes ns-page-enter {
+  0% { opacity: 0; transform: translateY(12px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.ns-float { animation: ns-float 6s ease-in-out infinite; }
+.ns-fade-up { animation: ns-fade-up 0.7s ease both; }
+.ns-halo { animation: ns-pulse-halo 7s ease-in-out infinite; }
+.ns-draw { stroke-dasharray: var(--dash, 1000); animation: ns-draw 2s ease forwards; }
+.ns-grow { transform-origin: bottom; animation: ns-grow 0.9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.ns-marquee { animation: ns-marquee 28s linear infinite; }
+.ns-page-enter { animation: ns-page-enter 0.5s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ns-float, .ns-halo, .ns-marquee { animation: none; }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(33, 40, 67, 0.2); /* navy-500 at 20% */
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #212843; /* navy-500 */
+  border-radius: 10px;
+}
+.custom-scrollbar {
+  scrollbar-color: #212843 rgba(33, 40, 67, 0.2);
+  scrollbar-width: thin;
+}
