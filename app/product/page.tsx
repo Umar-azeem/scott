@@ -20,12 +20,12 @@ import {
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Donnell Green — Loan Officer | Fairway Independent Mortgage",
+  title: "scott Green — Loan Officer | Fairway Independent Mortgage",
   description:
-    "Meet Donnell Green, loan officer at Fairway Independent Mortgage Corporation. 6+ years in mortgages, specializing in home purchasing and refinancing. 5 stars, 39 reviews.",
+    "Meet scott Green, loan officer at Fairway Independent Mortgage Corporation. 6+ years in mortgages, specializing in home purchasing and refinancing. 5 stars, 39 reviews.",
 };
 
-// ─── Loan Products (Donnell's mortgage services) ─────────────────
+// ─── Loan Products (scott's mortgage services) ─────────────────
 const loanProducts = [
   {
     id: "purchase",
@@ -131,7 +131,7 @@ const reviews = [
     author: "SWillliams from Fort Washington, MD",
     date: "4/17/2025",
     quote:
-      "I am writing to express my sincere gratitude for the exceptional service and support Donnell provided throughout my mortgage application process. From our initial consultation to the final closing, his professionalism and expertise made what could have been a daunting experience much smoother and more manageable.",
+      "I am writing to express my sincere gratitude for the exceptional service and support scott provided throughout my mortgage application process. From our initial consultation to the final closing, his professionalism and expertise made what could have been a daunting experience much smoother and more manageable.",
     tags: ["30 year fixed", "FHA Loan", "First-time home buyer"],
     closed: "Closed Apr 2025",
     loanType: "Purchase",
@@ -144,7 +144,7 @@ const reviews = [
     author: "kingsley Amoasie from Hagerstown, MD",
     date: "10/17/2024",
     quote:
-      "Donnell was an absolute game-changer in my home-buying experience! From the start, he went above and beyond to ensure everything went smoothly. Not only was he incredibly knowledgeable and responsive, but he also took the time to provide me with personalized advice and tips to help improve my credit score.",
+      "scott was an absolute game-changer in my home-buying experience! From the start, he went above and beyond to ensure everything went smoothly. Not only was he incredibly knowledgeable and responsive, but he also took the time to provide me with personalized advice and tips to help improve my credit score.",
     tags: ["30 year fixed", "FHA Loan", "Low credit score"],
     closed: "Closed Oct 2024",
     loanType: "Purchase",
@@ -157,7 +157,7 @@ const reviews = [
     author: "L S from Upper Marlboro, MD",
     date: "10/6/2024",
     quote:
-      "Working with Donnell Green was an exceptional experience! From start to finish, he was professional, knowledgeable, and incredibly responsive. He patiently answered all my questions, helped me navigate the process with ease, and ensured I got the best rate possible. His attention to detail and dedication made what could have been a stressful process feel effortless.",
+      "Working with scott Green was an exceptional experience! From start to finish, he was professional, knowledgeable, and incredibly responsive. He patiently answered all my questions, helped me navigate the process with ease, and ensured I got the best rate possible. His attention to detail and dedication made what could have been a stressful process feel effortless.",
     tags: [],
     closed: "Closed Oct 2024",
     loanType: "Purchase",
@@ -177,11 +177,11 @@ const specialties = [
   "30-Year Fixed Mortgages",
 ];
 
-export default function DonnellGreenPage() {
+export default function scottGreenPage() {
   return (
     <PageShell
       eyebrow="Meet Your Loan Officer"
-      title="Donnell Green"
+      title="scott Green"
       description="Loan Officer at Fairway Independent Mortgage Corporation. Helping families purchase and refinance homes with confidence for over 6 years."
     >
       <div className="mx-auto max-w-[1000px] space-y-20">
@@ -192,7 +192,7 @@ export default function DonnellGreenPage() {
               <div className="lg:w-2/5">
                 <img
                   src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Donnell Green"
+                  alt="scott Green"
                   className="h-64 w-full object-cover lg:h-full"
                 />
               </div>
@@ -203,15 +203,14 @@ export default function DonnellGreenPage() {
                     strokeWidth={1.8}
                   />
                   <h2 className="font-display text-2xl font-semibold tracking-tight text-midnight-ink">
-                    About Donnell
+                    About scott
                   </h2>
                 </div>
                 <p className="mt-3 text-sm text-midnight-ink/70 leading-relaxed">
                   Hello friends, family, and future referral partners. My name
-                  is Donnell Green, and I'm a loan officer at Fairway
-                  Independent Mortgage Corporation, where we specialize in home
-                  purchasing and home refinancing with a ton of products for
-                  both.
+                  is scott Green, and I'm a loan officer at Fairway Independent
+                  Mortgage Corporation, where we specialize in home purchasing
+                  and home refinancing with a ton of products for both.
                 </p>
                 <p className="mt-3 text-sm text-midnight-ink/70 leading-relaxed">
                   I have been in the mortgage industry for 6 years, finance for
@@ -374,7 +373,7 @@ export default function DonnellGreenPage() {
                   Website
                 </div>
                 <a
-                  href="https://mobile.fairwaynow.com/homehub/signup/donnell.green@fairwaymc.com"
+                  href="https://mobile.fairwaynow.com/homehub/signup/scott.green@fairwaymc.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-1 break-all text-xs text-midnight-ink/60 hover:underline"
@@ -484,7 +483,9 @@ export default function DonnellGreenPage() {
                     {review.loanType && (
                       <span>Loan Type: {review.loanType}</span>
                     )}
-                    {review.onTime && <span>Close on time: {review.onTime}</span>}
+                    {review.onTime && (
+                      <span>Close on time: {review.onTime}</span>
+                    )}
                     {review.fees && <span>Fees: {review.fees}</span>}
                   </div>
                 </div>
@@ -516,7 +517,7 @@ export default function DonnellGreenPage() {
             </p>
             <div className="mt-4 flex flex-wrap justify-center gap-3">
               <a
-                href="https://mobile.fairwaynow.com/homehub/signup/donnell.green@fairwaymc.com"
+                href="https://mobile.fairwaynow.com/homehub/signup/scott.green@fairwaymc.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >

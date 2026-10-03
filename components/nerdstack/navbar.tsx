@@ -63,8 +63,8 @@ export function Navbar() {
         type="button"
         className={`flex items-center gap-1 rounded-lg px-3 py-2 text-[14px] font-light transition-colors duration-300 hover:bg-linen-base hover:text-midnight-ink ${
           isLoanProgramsActive
-            ? "bg-linen-base text-midnight-ink"
-            : "text-midnight-ink/70"
+            ? "bg-linen-base text-white"
+            : "text-white"
         }`}
       >
         Loan Programs
@@ -112,9 +112,9 @@ export function Navbar() {
       <button
         type="button"
         onClick={() => setMobileDropdownOpen((v) => !v)}
-        className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-[14px] text-midnight-ink/80 hover:bg-linen-base"
+        className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-[14px] text-white hover:bg-linen-base"
       >
-        <span>Loan Programs</span>
+        <span className="text-white">Loan Programs</span>
         <Icons.ChevronDown
           className={`size-4 transition-transform duration-200 ${
             mobileDropdownOpen ? "rotate-180" : ""
@@ -145,7 +145,7 @@ export function Navbar() {
   return (
     <div className="fixed inset-x-0 top-4 z-50 flex justify-center px-4">
       <nav
-        className="flex w-full max-w-[1200px] items-center justify-between rounded-[20px] border border-border bg-[#0F6D69] px-4 py-3 backdrop-blur-md transition-shadow duration-300"
+        className="flex w-full max-w-[1200px] items-center justify-between rounded-[20px] border border-border bg-[#232A45] px-4 py-3 backdrop-blur-md transition-shadow duration-300"
         style={{ boxShadow: scrolled ? "var(--shadow-card-soft)" : "none" }}
       >
         {/* Logo */}
@@ -169,7 +169,7 @@ export function Navbar() {
               className={`rounded-lg text-midnight-ink px-3 py-2 text-[14px] font-light transition-colors duration-300 hover:bg-linen-base hover:text-midnight-ink ${
                 isActive(l.href)
                   ? "bg-linen-base  text-midnight-ink group-[]:hover:bg-linen-base hover:text-midnight-ink"
-                  : "text-midnight-ink/90 "
+                  : "text-white "
               }`}
             >
               {l.label}
@@ -182,13 +182,13 @@ export function Navbar() {
         <div className="hidden items-center gap-3 lg:flex">
           <Link
             href="/pricing"
-            className="px-2 text-[14px] font-light text-midnight-ink/70 transition-colors hover:text-midnight-ink"
+            className="px-2 text-[14px] font-light text-white transition-colors "
           >
             Sign in
           </Link>
           <Link
             href="/contact"
-            className="rounded-lg bg-midnight-ink px-4 py-2 text-[14px] font-light text-paper-cream transition-transform duration-300 hover:-translate-y-0.5"
+            className="rounded-lg text-midnight-ink px-4 py-2 text-[14px] font-light bg-paper-cream transition-transform duration-300 hover:-translate-y-0.5"
           >
             Apply Now
           </Link>
@@ -199,7 +199,7 @@ export function Navbar() {
           type="button"
           aria-label="Toggle menu"
           onClick={() => setOpen((v) => !v)}
-          className="flex size-9 items-center justify-center rounded-lg text-midnight-ink lg:hidden"
+          className="flex size-9 items-center justify-center bg-white rounded-lg text-midnight-ink lg:hidden"
         >
           {open ? (
             <Icons.X className="size-5" />
@@ -232,7 +232,7 @@ export function Navbar() {
             {renderMobileDropdown()}
 
             <Link
-              href="mailto:donnell.green@fairwaymc.com"
+              href="mailto:scott.green@fairwaymc.com"
               className="mt-2 rounded-lg flex items-center gap-2 justify-center bg-midnight-ink px-4 py-2 text-center text-[14px] text-paper-cream"
             >
               <Mail className="size-4" strokeWidth={1.6} /> Mail Us

@@ -172,7 +172,7 @@ export default function FAQ() {
               </p>
               <div className="mt-6 flex flex-wrap justify-center gap-3">
                 <a href="tel:+12023525625">
-                  <Button className="bg-white text-[#212843] shadow-md transition-all duration-300 hover:bg-[#161b2e] hover:text-white">
+                  <Button className="bg-white text-[#212843] shadow-md border-white border-2 transition-all duration-300 hover:bg-[#161b2e] hover:text-white">
                     <Phone className="mr-2 h-4 w-4" />
                     Call (202) 352-5625
                   </Button>
@@ -180,7 +180,7 @@ export default function FAQ() {
                 <Link href="/contact">
                   <Button
                     variant="outline"
-                    className="border-white text-white transition-all duration-300 hover:bg-white hover:text-[#212843]"
+                    className="border-white text-[#212843] transition-all duration-300 hover:bg-white hover:bg-[#212843]"
                   >
                     <MessageCircle className="mr-2 h-4 w-4" />
                     Send a Message

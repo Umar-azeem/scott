@@ -148,7 +148,7 @@ export default function FAQPage() {
     <PageShell
       eyebrow="FAQ"
       title="Frequently Asked Questions"
-      description="Everything you need to know about working with Donnell Green at Fairway Independent Mortgage Corporation."
+      description="Everything you need to know about working with scott Green at Fairway Independent Mortgage Corporation."
     >
       <div className="mx-auto max-w-[1000px] space-y-12">
         {/* ─── INTRO ─────────────────────────────────────────────────── */}
@@ -283,13 +283,11 @@ export default function FAQPage() {
                 <h3 className="mt-4 font-display text-lg font-semibold text-midnight-ink">
                   Call or Text
                 </h3>
-                <p className="mt-1 text-sm text-[#0F6D69]">
-                  (667) 900-2913
-                </p>
+                <p className="mt-1 text-sm text-[#0F6D69]">(667) 900-2913</p>
               </a>
 
               <a
-                href="mailto:donnell.green@fairwaymc.com"
+                href="mailto:scott.green@fairwaymc.com"
                 className="group flex flex-col items-center rounded-[20px] border border-border bg-lift-white/50 p-6 text-center transition-all duration-300 hover:bg-lift-white"
               >
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#0F6D69]/10 text-[#0F6D69] transition group-hover:bg-[#0F6D69] group-hover:text-white">
@@ -299,7 +297,7 @@ export default function FAQPage() {
                   Email Me
                 </h3>
                 <p className="mt-1 text-xs text-[#0F6D69] break-all">
-                  donnell.green@fairwaymc.com
+                  scott.green@fairwaymc.com
                 </p>
               </a>
 
@@ -337,7 +335,7 @@ export default function FAQPage() {
             <div className="flex items-center justify-center gap-2 text-xs text-midnight-ink/50">
               <ShieldCheck className="h-4 w-4" />
               <span>
-                Donnell Green · NMLS# 1217575 · Fairway Independent Mortgage
+                scott Green · NMLS# 1217575 · Fairway Independent Mortgage
                 Corporation
               </span>
             </div>

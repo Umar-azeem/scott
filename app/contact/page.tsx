@@ -4,7 +4,14 @@ import { useState } from "react";
 import { PageShell } from "@/components/nerdstack/page-shell";
 import { Reveal } from "@/components/nerdstack/reveal";
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, Clock, Lock, CheckCircle2, MapPin } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  Clock,
+  Lock,
+  CheckCircle2,
+  MapPin,
+} from "lucide-react";
 // Import brand icons from react-icons/fa
 import { FaLinkedin, FaGoogle } from "react-icons/fa";
 
@@ -12,15 +19,15 @@ const socialLinks = [
   {
     id: "linkedin",
     icon: FaLinkedin,
-    url: "http://linkedin.com/in/donnell-green-b2557066",
+    url: "https://www.linkedin.com/", // TODO: confirm Scott's LinkedIn URL
     label: "LinkedIn",
   },
-  {
-    id: "zillow",
-    icon: FaGoogle, // Zillow doesn't have a react-icon, using Google as placeholder or you can use a custom SVG
-    url: "https://www.zillow.com/lender-profile/dgreen82/",
-    label: "Zillow",
-  },
+  // {
+  //   id: "zillow",
+  //   icon: FaGoogle, // swap for SiZillow from react-icons/si if available
+  //   url: "", // TODO: confirm Scott's Zillow profile URL
+  //   label: "Zillow",
+  // },
 ];
 
 export default function ContactPage() {
@@ -54,11 +61,11 @@ Message:
 ${message || "No additional message provided."}
 
 ---
-This inquiry was sent from the Donnell Green - Fairway Independent Mortgage website.`,
+This inquiry was sent from the Scott J Moon - NEXA Mortgage website.`,
     );
 
     window.open(
-      `mailto:donnell.green@fairwaymc.com?subject=${emailSubject}&body=${emailBody}`,
+      `mailto:smoon@nexamortgage.com?subject=${emailSubject}&body=${emailBody}`,
       "_blank",
     );
 
@@ -77,7 +84,7 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
           <Reveal>
             <div className="rounded-[20px] border border-border bg-lift-white p-4 text-center shadow-card-soft sm:p-6">
               <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
-                <CheckCircle2 className="h-8 w-8 text-[#021B2C]" />
+                <CheckCircle2 className="h-8 w-8 text-[#212843]" />
               </div>
               <h3 className="text-2xl font-bold text-midnight-ink">
                 Message Ready!
@@ -86,17 +93,17 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
                 Your email client has been opened with your message pre‑filled.
               </p>
               <p className="mt-1 text-sm text-midnight-ink/50">
-                If it didn't open, please contact us directly at{" "}
+                If it didn't open, please contact Scott directly at{" "}
                 <a
-                  href="mailto:donnell.green@fairwaymc.com"
+                  href="mailto:smoon@nexamortgage.com"
                   className="font-medium text-midnight-ink underline"
                 >
-                  donnell.green@fairwaymc.com
+                  smoon@nexamortgage.com
                 </a>
               </p>
               <Button
                 onClick={() => setSubmitted(false)}
-                className="mt-6 bg-midnight-ink text-lift-white hover:bg-midnight-ink/90"
+                className="mt-6 bg-[#212843] text-lift-white hover:bg-[#161b2e]"
               >
                 Send Another Message
               </Button>
@@ -110,8 +117,8 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
   return (
     <PageShell
       eyebrow="contact"
-      title="Get in touch with Donnell Green"
-      description="Ready for a clear, straightforward mortgage? Let's connect – I'm here to help."
+      title="Get in Touch with Scott J Moon"
+      description="Ready for a clear, straightforward mortgage? Let's connect — I'm here to help."
     >
       <div className="mx-auto max-w-[1000px]">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
@@ -125,8 +132,8 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
                   </h2>
                   <p className="mt-2 text-midnight-ink/70">
                     You're not just filling out a form. You're starting a
-                    conversation with an experienced loan officer at Fairway
-                    Independent Mortgage Corporation.
+                    conversation with an experienced mortgage professional at
+                    NEXA Mortgage, LLC.
                   </p>
                 </div>
 
@@ -153,8 +160,8 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
                         No Obligation, No Pressure
                       </h4>
                       <p className="text-sm text-midnight-ink/60">
-                        This is about discovery and planning. I provide
-                        clarity, not a heavy sales pitch.
+                        This is about discovery and planning. I provide clarity,
+                        not a heavy sales pitch.
                       </p>
                     </div>
                   </div>
@@ -166,15 +173,15 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
                   </h3>
                   <div className="mt-6 space-y-6">
                     <a
-                      href="tel:+16679002913"
+                      href="tel:+12023525625"
                       className="group flex items-start gap-4"
                     >
-                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border bg-lift-white text-midnight-ink transition group-hover:bg-[#0F6D69] group-hover:text-lift-white">
+                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border bg-lift-white text-midnight-ink transition group-hover:bg-[#212843] group-hover:text-lift-white">
                         <Phone className="h-4 w-4" />
                       </div>
                       <div>
-                        <p className="text-lg font-bold text-midnight-ink group-hover:text-#0F6D69">
-                          (667) 900-2913
+                        <p className="text-lg font-bold text-midnight-ink group-hover:text-[#212843]">
+                          (202) 352-5625
                         </p>
                         <p className="text-xs text-midnight-ink/50">
                           Call or Text for a Quick Chat
@@ -183,15 +190,15 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
                     </a>
 
                     <a
-                      href="mailto:donnell.green@fairwaymc.com"
+                      href="mailto:smoon@nexamortgage.com"
                       className="group flex items-start gap-4"
                     >
-                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border bg-lift-white text-midnight-ink transition group-hover:bg-[#0F6D69] group-hover:text-lift-white">
+                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border bg-lift-white text-midnight-ink transition group-hover:bg-[#212843] group-hover:text-lift-white">
                         <Mail className="h-4 w-4" />
                       </div>
                       <div>
                         <p className="text-lg font-bold text-midnight-ink group-hover:text-midnight-ink/80 break-all">
-                          donnell.green@fairwaymc.com
+                          smoon@nexamortgage.com
                         </p>
                         <p className="text-xs text-midnight-ink/50">
                           Email for Detailed Inquiries
@@ -204,13 +211,11 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
                         <MapPin className="h-4 w-4" />
                       </div>
                       <div>
-                        <p className="font-bold text-midnight-ink">Address</p>
+                        <p className="font-bold text-midnight-ink">Company</p>
                         <p className="text-sm text-midnight-ink/60">
-                          40 W. Chesapeake Ave,
+                          NEXA Mortgage, LLC
                           <br />
-                          Suite 400
-                          <br />
-                          Towson, MD 21204
+                          NMLS# 1660690
                         </p>
                       </div>
                     </div>
@@ -235,7 +240,7 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
                 </div>
 
                 <div className="border-t border-border pt-8">
-                  <h3 className="text-sm font-semibold uppercase tracking-wider text-[midnight-ink]/50">
+                  <h3 className="text-sm font-semibold uppercase tracking-wider text-midnight-ink/50">
                     Follow &amp; Connect
                   </h3>
                   <div className="mt-4 flex flex-wrap gap-3">
@@ -245,7 +250,7 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
                         href={url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-lift-white text-midnight-ink transition hover:bg-[#0F6D69] hover:text-lift-white"
+                        className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-lift-white text-midnight-ink transition hover:bg-[#212843] hover:text-lift-white"
                         aria-label={label}
                       >
                         <Icon className="h-4 w-4" />
@@ -253,7 +258,8 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
                     ))}
                   </div>
                   <p className="mt-4 text-xs text-midnight-ink/40">
-                    NMLS# 1217575 · Fairway Independent Mortgage Corporation
+                    Scott J Moon · NMLS# 1492315 · NEXA Mortgage, LLC NMLS#
+                    1660690
                   </p>
                 </div>
               </div>
@@ -269,18 +275,18 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
                 </h3>
                 <div className="mt-2 flex flex-wrap gap-3">
                   <a
-                    href="mailto:donnell.green@fairwaymc.com"
+                    href="mailto:smoon@nexamortgage.com"
                     className="inline-flex items-center gap-2 rounded-full bg-midnight-ink/5 px-3 py-1.5 text-xs text-midnight-ink/70 transition hover:bg-midnight-ink/10"
                   >
                     <Mail className="h-3.5 w-3.5" />
-                    donnell.green@fairwaymc.com
+                    smoon@nexamortgage.com
                   </a>
                   <a
-                    href="tel:+16679002913"
+                    href="tel:+12023525625"
                     className="inline-flex items-center gap-2 rounded-full bg-midnight-ink/5 px-3 py-1.5 text-xs text-midnight-ink/70 transition hover:bg-midnight-ink/10"
                   >
                     <Phone className="h-3.5 w-3.5" />
-                    (667) 900-2913
+                    (202) 352-5625
                   </a>
                 </div>
 
@@ -419,23 +425,22 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
                     >
                       <option value="">Select a goal…</option>
                       <option value="Home Purchase">Home Purchase</option>
-                      <option value="Refinance for Lower payment">
+                      <option value="Refinance for Lower Payment">
                         Refinance for Lower Payment
                       </option>
-                      <option value="Refinance for Cash out">
+                      <option value="Refinance for Cash Out">
                         Refinance for Cash Out
                       </option>
-                      <option value="Home Equity Line of Credit (HELOC)">
-                        Home Equity Line of Credit (HELOC)
+                      <option value="VA Home Loan">VA Home Loan</option>
+                      <option value="First-Time Homebuyer">
+                        First-Time Homebuyer
                       </option>
-                      <option value="Investment Property (Purchase or Refinance)">
-                        Investment Property (Purchase or Refinance)
+                      <option value="Conventional Loan">
+                        Conventional Loan
                       </option>
-                      <option value="Commercial Real Estate Finance options">
-                        Commercial Real Estate Finance Options
-                      </option>
-                      <option value="General Home or Commercial Finance Questions">
-                        General Home or Commercial Finance Questions
+                      <option value="FHA Loan">FHA Loan</option>
+                      <option value="General Mortgage Question">
+                        General Mortgage Question
                       </option>
                     </select>
                   </div>
@@ -456,7 +461,7 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full rounded-xl bg-[#0F6D69] py-6 font-semibold text-lift-white transition hover:bg-midnight-ink/90 disabled:opacity-70"
+                    className="w-full rounded-xl bg-[#212843] py-6 font-semibold text-lift-white transition hover:bg-[#161b2e] disabled:opacity-70"
                   >
                     {isSubmitting ? "Opening Email…" : "Send Message"}
                   </Button>

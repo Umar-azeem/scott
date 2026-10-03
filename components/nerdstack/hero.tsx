@@ -179,7 +179,7 @@ export function Hero() {
           >
             <a
               href="/contact"
-              className="group inline-flex items-center justify-center gap-2 rounded-lg bg-[#0F6D69] px-6 py-3 text-sm font-light text-paper-cream transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_30px_-8px_rgba(35,31,35,0.35)]"
+              className="group inline-flex items-center justify-center gap-2 rounded-lg bg-[#232A45] px-6 py-3 text-sm font-light text-paper-cream transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_30px_-8px_rgba(35,31,35,0.35)]"
             >
               <Phone className="size-4" strokeWidth={1.6} />
               Schedule Intro Call

@@ -11,44 +11,41 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
-// ⚠️ PLACEHOLDER TESTIMONIALS — replace with verified client reviews
-// (with written permission) before publishing. Do NOT use real client
-// data without consent.
 const testimonials = [
   {
     key: "first-time",
     label: "First-Time Home Buyer",
     Icon: Home,
     tint: "var(--color-packet-sky)",
-    author: "Verified Client", // TODO: replace with real name
+    author: "SWillliams, Fort Washington, MD",
     quote:
-      "Testimonial coming soon. Scott's verified client reviews will appear here once approved for publication.",
-    image: "/img/testimonial-1.jpg", // TODO: replace with real image
+      "I am writing to express my sincere gratitude for the exceptional service and support scott provided throughout my mortgage application process. From our initial consultation to the final closing, his professionalism and expertise made what could have been a daunting experience much smoother and more manageable. His willingness to answer every question gave me complete confidence.",
+    image: "/img/jrb.jpg", // replace with actual image path
     meta: {
-      closed: "", // TODO: replace with real data
-      loanType: "",
-      rate: "",
-      onTime: "",
-      fees: "",
-      tags: [],
+      closed: "Closed Apr 2025",
+      loanType: "Purchase",
+      rate: "As expected",
+      onTime: "Yes",
+      fees: "Lower than expected",
+      tags: ["30 year fixed", "FHA Loan", "First-time home buyer"],
     },
   },
   {
     key: "credit",
-    label: "Credit-Challenged Buyer",
+    label: "Low Credit Score",
     Icon: Star,
     tint: "var(--color-qubit-orchid)",
-    author: "Verified Client", // TODO
+    author: "Kingsley Amoasie, Hagerstown, MD",
     quote:
-      "Testimonial coming soon. Scott's verified client reviews will appear here once approved for publication.",
-    image: "/img/testimonial-2.jpg", // TODO
+      "scott was an absolute game-changer in my home-buying experience! From the start, he went above and beyond to ensure everything went smoothly. Not only was he incredibly knowledgeable and responsive, but he also took the time to provide me with personalized advice and tips to help improve my credit score. He truly cared about my success.",
+    image: "/img/jrb2.jpg",
     meta: {
-      closed: "",
-      loanType: "",
-      rate: "",
-      onTime: "",
+      closed: "Closed Oct 2024",
+      loanType: "Purchase",
+      rate: "Lower than expected",
+      onTime: "Yes",
       fees: "",
-      tags: [],
+      tags: ["30 year fixed", "FHA Loan", "Low credit score"],
     },
   },
   {
@@ -56,13 +53,13 @@ const testimonials = [
     label: "Purchase & Refinance",
     Icon: RefreshCw,
     tint: "var(--color-syntax-mint)",
-    author: "Verified Client", // TODO
+    author: "L S, Upper Marlboro, MD",
     quote:
-      "Testimonial coming soon. Scott's verified client reviews will appear here once approved for publication.",
-    image: "/img/testimonial-3.jpg", // TODO
+      "Working with scott Green was an exceptional experience! From start to finish, he was professional, knowledgeable, and incredibly responsive. He patiently answered all my questions, helped me navigate the process with ease, and ensured I got the best rate possible. His attention to detail and dedication made what could have been a stressful process feel effortless.",
+    image: "/img/jrb3.jpg",
     meta: {
-      closed: "",
-      loanType: "",
+      closed: "Closed Oct 2024",
+      loanType: "Purchase",
       rate: "",
       onTime: "",
       fees: "",
@@ -87,26 +84,24 @@ export function Features() {
             <h2 className="mt-4 text-balance font-display text-[40px] font-normal leading-[1.1] tracking-[-1px] text-midnight-ink sm:text-[48px]">
               What My Clients Are Saying...
             </h2>
-            {/* Rating summary — hidden until verified reviews exist */}
-            {/* 
+            {/* Rating summary */}
             <div className="mt-4 flex items-center gap-1.5">
               {[...Array(5)].map((_, i) => (
                 <Star
                   key={i}
-                  className="size-4 fill-[#212843] text-[#212843]"
+                  className="size-4 fill-[#232A45] text-[#232A45]"
                 />
               ))}
               <span className="ml-2 text-sm text-midnight-ink/60">
-                5 Stars ∙ XX Reviews
+                5 Stars ∙ 39 Reviews
               </span>
             </div>
-            */}
           </div>
           <Link
-            href="/testimonials"
+            href="/reviews"
             className="mt-2 inline-flex items-center gap-2 whitespace-nowrap rounded-lg border border-border bg-lift-white px-5 py-3 text-sm font-medium text-midnight-ink transition-colors hover:bg-midnight-ink/5"
           >
-            VIEW MORE TESTIMONIALS
+            VIEW MORE TESTIMONIALS HERE
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
@@ -123,7 +118,7 @@ export function Features() {
                 borderColor: active === i ? "transparent" : "var(--border)",
                 background:
                   active === i
-                    ? "var(--color-navy-base)"
+                    ? "var(--color-midnight-ink)"
                     : "var(--color-lift-white)",
                 color: active === i ? "var(--color-paper-cream)" : "#231f23a3",
               }}
@@ -162,7 +157,7 @@ export function Features() {
                 {tab.meta.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-full bg-[#212843]/10 px-2.5 py-0.5 text-xs text-[#212843]"
+                    className="rounded-full bg-[#0F6D69]/10 px-2.5 py-0.5 text-xs text-[#0F6D69]"
                   >
                     {tag}
                   </span>

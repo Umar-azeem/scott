@@ -316,11 +316,11 @@ export default function TabSec() {
 
   return (
     <section className="relative overflow-hidden bg-[#EEDBCC] py-16 sm:py-20">
-      {/* Scrollbar styling for the tab bar, in brand color #0F6D69 */}
+      {/* Scrollbar styling for the tab bar, in brand color #2C3454 */}
       <style jsx>{`
         .tab-scroll {
           scrollbar-width: thin;
-          scrollbar-color: #0f6d69 transparent;
+          scrollbar-color: #2C3454 transparent;
         }
         .tab-scroll::-webkit-scrollbar {
           height: 4px;
@@ -329,7 +329,7 @@ export default function TabSec() {
           background: transparent;
         }
         .tab-scroll::-webkit-scrollbar-thumb {
-          background-color: #0f6d69;
+          background-color: #2C3454;
           border-radius: 9999px;
         }
         .tab-scroll::-webkit-scrollbar-thumb:hover {
@@ -337,17 +337,17 @@ export default function TabSec() {
         }
       `}</style>
       {/* Decorative elements */}
-      <div className="pointer-events-none absolute -left-32 -top-32 size-64 rounded-full bg-[#0F6D69]/5 blur-3xl" />
-      <div className="pointer-events-none absolute -bottom-32 -right-32 size-96 rounded-full bg-[#0F6D69]/5 blur-3xl" />
+      <div className="pointer-events-none absolute -left-32 -top-32 size-64 rounded-full bg-[#2C3454]/5 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-32 -right-32 size-96 rounded-full bg-[#2C3454]/5 blur-3xl" />
 
       <div className="relative mx-auto max-w-6xl px-4">
         {/* ─── Header ─── */}
         <div className="mb-10 text-center">
-          <span className="inline-block rounded-full bg-[#0F6D69]/10 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-[#0F6D69]">
+          <span className="inline-block rounded-full bg-[#2C3454]/10 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-[#2C3454]">
             Loan Programs
           </span>
           <h2 className="mt-3 font-display text-3xl font-light tracking-tight text-midnight-ink sm:text-4xl">
-            Explore Your <span className="text-[#0F6D69]">Loan Options</span>
+            Explore Your <span className="text-[#2C3454]">Loan Options</span>
           </h2>
           <p className="mt-2 text-sm text-midnight-ink/50">
             Understand your mortgage options with clear, personalized guidance
@@ -366,7 +366,7 @@ export default function TabSec() {
                   onClick={() => setActiveTab(tab.id)}
                   className={`shrink-0 touch-manipulation whitespace-nowrap rounded-xl px-4 py-2.5 text-sm font-light transition-all duration-300 active:scale-95 sm:px-5 ${
                     activeTab === tab.id
-                      ? "bg-[#0F6D69] text-white shadow-md"
+                      ? "bg-[#2C3454] text-white shadow-md"
                       : "text-midnight-ink/60 hover:bg-[#EEDBCC]/50 hover:text-midnight-ink"
                   }`}
                 >
@@ -403,7 +403,7 @@ export default function TabSec() {
               <div className="mt-8 flex justify-center border-t border-white/20 pt-6">
                 <a
                   href="/contact"
-                  className="group inline-flex items-center gap-2 rounded-xl bg-white px-8 py-3.5 text-sm font-light text-[#0F6D69] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_30px_-8px_rgba(0,0,0,0.25)]"
+                  className="group inline-flex items-center gap-2 rounded-xl bg-white px-8 py-3.5 text-sm font-light text-[#2C3454] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_30px_-8px_rgba(0,0,0,0.25)]"
                 >
                   {getButtonLabel()}
                   <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />

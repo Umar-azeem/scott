@@ -39,253 +39,123 @@ interface Review {
 
 const reviews: Review[] = [
   {
-    name: "SWillliams",
-    location: "Fort Washington, MD",
-    date: "4/17/2025",
-    title: "First time home owner",
+    name: "Stephanie Z",
+    location: "Alexandria, VA",
+    date: "8/24/2021",
+    title: "Excellent service",
     rating: 5,
-    text: `I am writing to express my sincere gratitude for the exceptional service and support Donnell provided throughout my mortgage application process. From our initial consultation to the final closing, his professionalism and expertise made what could have been a daunting experience much smoother and more manageable. His willingness to answer every question gave me complete confidence throughout the entire process.`,
-    loanStatus: "Closed Apr 2025",
-    loanType: "Purchase",
-    interestRate: "As expected",
-    closeOnTime: "Yes",
-    fees: "Lower than expected",
-    tags: ["30 year fixed", "FHA Loan", "First-time home buyer"],
-  },
-  {
-    name: "Kingsley Amoasie",
-    location: "Hagerstown, MD",
-    date: "10/17/2024",
-    title: "Outstanding Service – Truly Above and Beyond!",
-    rating: 5,
-    text: `Donnell was an absolute game-changer in my home-buying experience! From the start, he went above and beyond to ensure everything went smoothly. Not only was he incredibly knowledgeable and responsive, but he also took the time to provide me with personalized advice and tips to help improve my credit score. He truly cared about my success.`,
-    loanStatus: "Closed Oct 2024",
-    loanType: "Purchase",
-    interestRate: "Lower than expected",
-    closeOnTime: "Yes",
-    tags: ["30 year fixed", "FHA Loan", "Low credit score"],
-  },
-  {
-    name: "L S",
-    location: "Upper Marlboro, MD",
-    date: "10/6/2024",
-    title: "Simple the best",
-    rating: 5,
-    text: `Working with Donnell Green was an exceptional experience! From start to finish, he was professional, knowledgeable, and incredibly responsive. He patiently answered all my questions, helped me navigate the process with ease, and ensured I got the best rate possible. His attention to detail and dedication made what could have been a stressful process feel effortless.`,
-    loanStatus: "Closed Oct 2024",
-    loanType: "Purchase",
-    interestRate: "As expected",
-    closeOnTime: "Yes",
-    fees: "Lower than expected",
-  },
-  {
-    name: "Bria",
-    location: "Windsor Mill, MD",
-    date: "10/5/2024",
-    title: "10/10 recommend!",
-    rating: 5,
-    text: `Donnell was great from start to finish. He's very knowledgeable when it comes to his career. He leaves no question unanswered. He's been recommended to family and friends! 10/10 recommended — we'll be using him again.`,
-    loanStatus: "Closed Oct 2024",
-    loanType: "Purchase",
-    interestRate: "As expected",
-    closeOnTime: "Yes",
-    fees: "Lower than expected",
-    tags: ["30 year fixed", "FHA Loan", "First-time home buyer"],
-  },
-  {
-    name: "mgeorge162",
-    location: "Edgewood, MD",
-    date: "9/23/2024",
-    title: "We're Grateful",
-    rating: 5,
-    text: `We were referred to Donnell by one of our friends. The moment we started to communicate with Donnell we felt comfortable right away. He treated us like family, and explained the entire house buying process to us. He answered every question we had. Being first time home buyers, we couldn't have asked for a better experience.`,
-    loanStatus: "Closed Jul 2024",
-    loanType: "Purchase",
-    interestRate: "Lower than expected",
-    closeOnTime: "Yes",
-    fees: "Lower than expected",
-    tags: ["30 year fixed", "FHA Loan", "First-time home buyer"],
-  },
-  {
-    name: "Connor Loube",
-    location: "Frederick, MD",
-    date: "1/3/2024",
-    title: "Great Experience",
-    rating: 5,
-    text: `Donnell was available what felt like 24/7 to help with anything and answer all questions. He made the stressful process of home buying not so stressful and broke down the process. Very timely in his responses and easy to talk to. Would definitely recommend.`,
-    loanStatus: "In progress",
-    loanType: "Purchase",
-    tags: ["30 year fixed", "FHA Loan", "First-time home buyer"],
-  },
-  {
-    name: "tbreaux14",
-    location: "Baltimore, MD",
-    date: "1/1/2024",
-    title: "10 out of 10!",
-    rating: 5,
-    text: `Being a first time home buyer can be nerve wrecking but I felt Donnell's services made me feel at ease. He is extremely professional, patient and he definitely knows his stuff! He gave me a lot of tips, answered all my questions even if asked the same multiple times lol.`,
-    loanStatus: "Closed Dec 2023",
-    loanType: "Purchase",
-    interestRate: "As expected",
-    closeOnTime: "Yes",
-    fees: "Lower than expected",
-    tags: ["30 year fixed", "Conventional Loan", "First-time home buyer"],
-  },
-  {
-    name: "Tee",
-    location: "Baltimore, MD",
-    date: "10/31/2023",
-    title: "Home and Student loans paid off",
-    rating: 5,
-    text: `Donnell is an amazing lender. I closed on my house in a little over 30 days and he was able to find me money to assist me. The best part was he also found a grant that paid off my student loans with the purchase of my home. I'm grateful.`,
-    loanStatus: "Closed Aug 2023",
-    loanType: "Purchase",
-    interestRate: "As expected",
-    closeOnTime: "Yes",
-    fees: "Lower than expected",
-  },
-  {
-    name: "Georgia W.",
-    location: "Windsor Mill, MD",
-    date: "10/29/2023",
-    title: "1st Home Buyer",
-    rating: 5,
-    text: `Thank you so much Donnell for all your help in securing the loan for my new home in Baltimore County. As a first time homebuyer I appreciated how kind, organized, thorough & professional you were during this entire process. You went above and beyond to ensure that all my questions were answered.`,
-    loanStatus: "Closed Oct 2023",
-    loanType: "Purchase",
-    interestRate: "As expected",
-    closeOnTime: "Yes",
-    fees: "As expected",
-    tags: ["30 year fixed", "FHA Loan", "First-time home buyer"],
-  },
-  {
-    name: "morrisonmarcus",
-    location: "Baltimore, MD",
-    date: "10/28/2023",
-    title:
-      "He is the best person to guide you and assist you in every way throughout the full term of the loan process.",
-    rating: 5,
-    text: `He was very professional and throughout my first experience, he offered expert professional advice. I highly recommend him to everyone out there who is seeking to buy a home, especially "First Time Home Buyers."`,
-    loanStatus: "Closed Oct 2023",
-    loanType: "Purchase",
-    interestRate: "As expected",
-    closeOnTime: "Yes",
-    fees: "Lower than expected",
-    tags: ["30 year fixed", "FHA Loan", "First-time home buyer"],
-  },
-  {
-    name: "Knowledgeable",
-    location: "Baltimore, MD",
-    date: "7/11/2023",
-    title: "Dreams come true",
-    rating: 5,
-    text: `My lender was knowledgeable about various types of loans and various types of grant programs. For first time homebuyers, Mr. Green was professional, very communicative. I highly recommend Mr. Green for first time homebuyers and people who are investing in a home for the very first time.`,
-    loanStatus: "Closed Jul 2023",
-    loanType: "Purchase",
-    interestRate: "As expected",
-    closeOnTime: "Yes",
-    fees: "As expected",
-    tags: ["30 year fixed", "FHA Loan", "First-time home buyer"],
-  },
-  {
-    name: "Gigi M.",
-    location: "Baltimore, MD",
-    date: "7/4/2023",
-    title: "Donnell Green",
-    rating: 5,
-    text: `Donnell is professional and relatable, explained each step & what to expect next from pre-approval to closing. He properly responded to questions or concerns. Donnell was a pleasure to work with — never felt uncomfortable, unheard, or that he was too busy when needing to contact him. Nice working with him.`,
-    loanStatus: "Closed Jul 2023",
-    loanType: "Purchase",
-    interestRate: "As expected",
-    closeOnTime: "Yes",
-    fees: "Lower than expected",
-    tags: ["30 year fixed", "Conventional Loan", "First-time home buyer"],
-  },
-  {
-    name: "Stacey Bennett",
-    location: "Owings Mills, MD",
-    date: "4/11/2023",
-    title: "Small Business Owner",
-    rating: 5,
-    text: `As a small business owner I was worried about the home buying process due to all the paperwork and income verifications. Once I spoke to Donnell he put my worries to rest. He was very knowledgeable and available to help with any questions I had.`,
-    loanStatus: "Closed Apr 2023",
-    loanType: "Purchase",
-    interestRate: "Lower than expected",
-    closeOnTime: "Yes",
-    fees: "As expected",
-    tags: ["30 year fixed", "FHA Loan", "Self employed"],
-  },
-  {
-    name: "Jefferson M Exinor S",
-    location: "Baltimore, MD",
-    date: "11/15/2022",
-    title: "1st time Buyer",
-    rating: 5,
-    text: `Donnell did his thang — he went above and beyond to get me approved and my closing cost was ONLY $2,800. Well below the original amount that I was quoted for. I was kept in the loop with daily calls (sometimes multiple calls). I appreciate knowing what was going on.`,
-    loanStatus: "Closed Oct 2022",
-    loanType: "Refinance",
-    interestRate: "As expected",
-    closeOnTime: "No",
-    fees: "Lower than expected",
-    tags: ["30 year fixed", "FHA Loan", "First-time home buyer"],
-    reply:
-      "Donnell Green: I was a pleasure working with you Jefferson. I know your home will be the perfect place for your family and a great asset for generational wealth.",
-  },
-  {
-    name: "kiritter",
-    location: "Berlin, MD",
-    date: "4/28/2021",
-    title: "DJ was great to work with on our refinance.",
-    rating: 5,
-    text: `DJ was very knowledgeable of the current market and was able to provide us all of our options to refinance our mortgage. He was a pleasure to work with and I highly recommend DJ Green.`,
-    loanStatus: "Closed Apr 2021",
+    text: `Scott and his team are phenomenal. They were fast, knowledgeable, honest, and always available to answer questions. I will use them again in the future.`,
+    loanStatus: "Closed Aug 2021",
     loanType: "Refinance",
     interestRate: "Lower than expected",
     closeOnTime: "Yes",
-  },
-  {
-    name: "laura ann5",
-    location: "Minnetrista, MN",
-    date: "12/8/2020",
-    title: "Professional, kind and knowledgeable",
-    rating: 5,
-    text: `From the initial call through closing, DJ was remarkably attentive and had answers to all of our questions. He always included details and made sure we were on the same page. We will recommend DJ Green to our family and friends.`,
-    loanStatus: "Closed Dec 2020",
-    loanType: "Refinance",
-    interestRate: "As expected",
-    closeOnTime: "Yes",
-    fees: "As expected",
+    fees: "Lower than expected",
     tags: ["30 year fixed", "Conventional Loan"],
   },
   {
-    name: "maiden1",
-    location: "Colorado Springs, CO",
-    date: "9/17/2020",
-    title: "AWESOME",
+    name: "Kevin F.",
+    location: "Sacramento, CA",
+    date: "6/29/2021",
+    title: "Awesome Lender!",
     rating: 5,
-    text: `DJ was wonderful to work with. Very precise on all his numbers, had paperwork done and closing date was about 7 days out. Definitely would recommend DJ to anybody. Whole process pretty simple to do.`,
-    loanStatus: "In progress",
-    loanType: "Refinance",
-    tags: ["30 year fixed", "VA Loan"],
+    text: `I had the pleasure of working with Scott Moon as the lender of my buyer in a real estate purchase. From the beginning I found Scott to be professional and very, very responsive. Even though Scott and I were 3 hours apart in time zones, he always answered my calls.`,
+    loanStatus: "Closed May 2021",
+    loanType: "Purchase",
+    interestRate: "As expected",
+    closeOnTime: "Yes",
+    fees: "As expected",
   },
   {
-    name: "S K Johnson",
-    location: "Maplewood, MN",
-    date: "9/16/2020",
-    title: "Quicken Loans",
+    name: "Edward Morozov",
+    location: "College Park, MD",
+    date: "6/13/2021",
+    title: "Scott was great!",
     rating: 5,
-    text: `Great attention and service rendered by my originator DJ Green. I would do it again if needed with not doing anything differently. DJ responded to text messages or e-mail very promptly. Quicken scheduled my loan closing 24 days after origination. I have had no bait and switch. Great interest rate.`,
-    loanStatus: "In progress",
-    loanType: "Refinance",
-    tags: ["30 year fixed", "VA Loan"],
+    text: `Dedicated, responsive, thoughtful, and honest! Scott took the time to answer all of my questions and provide information that I didn't even know I needed. I would recommend him to anybody looking for a mortgage in the DMV!`,
+    loanStatus: "Closed Jun 2021",
+    loanType: "Purchase",
+    interestRate: "As expected",
+    closeOnTime: "Yes",
+    fees: "As expected",
+    tags: ["30 year fixed", "Conventional Loan", "First-time home buyer"],
   },
   {
-    name: "saundralacy",
-    location: "Belleville, MI",
-    date: "9/16/2020",
-    title: "Awesome!!",
+    name: "joy K",
+    location: "Washington, DC",
+    date: "6/10/2021",
+    title: "Fantastic experience!",
     rating: 5,
-    text: `DJ Green was responsive, kept us informed and explained the entire process. We closed on our re-finance quickly and without any issues. I've given his information to several friends who are interested in refinancing.`,
+    text: `Scott handled my recent refinance, and was responsive and knowledgeable. We were able to close much earlier than I had anticipated. He was patient, kind and answered all of my questions. I thoroughly enjoyed working with Scott, and will continue to recommend him to friends and colleagues.`,
+    loanStatus: "Closed Jun 2021",
+    loanType: "Refinance",
+    interestRate: "As expected",
+    closeOnTime: "Yes",
+    fees: "Lower than expected",
+    tags: ["Conventional Loan"],
+  },
+  {
+    name: "EE-VA",
+    location: "Annandale, VA",
+    date: "4/19/2021",
+    title: "Outstanding loan officer!",
+    rating: 5,
+    text: `Scott Moon provided outstanding loan officer support during the refinancing of our home. A member of our family recommended Scott highly based on their recent refinance. He made the process seamless and easy for us. He was responsive, knowledgeable and provided clear and succinct communication.`,
+    loanStatus: "Closed Oct 2020",
+    loanType: "Refinance",
+    interestRate: "As expected",
+    closeOnTime: "Yes",
+    fees: "As expected",
+    tags: ["Conventional Loan"],
+  },
+  {
+    name: "Sally992",
+    location: "Towson, MD",
+    date: "1/23/2021",
+    title: "Great loan officer",
+    rating: 5,
+    text: `Responsive, knowledgeable, and available whenever you have a question or need any help. Closed within thirty days of having an accepted offer. Thankful for Scott/WEI!`,
+    loanStatus: "Closed Dec 2020",
+    loanType: "Purchase",
+    interestRate: "As expected",
+    closeOnTime: "Yes",
+    fees: "As expected",
+    tags: ["30 year fixed", "Conventional Loan", "First-time home buyer"],
+  },
+  {
+    name: "HV-VA",
+    location: "Gainesville, VA",
+    date: "12/9/2020",
+    title: "Professional & Knowledgeable",
+    rating: 5,
+    text: `Scott is professional, responsive and knowledgeable. He responded to my questions not only to answer but with additional information. He's patient and very pleasant to talk with. I've been highly recommending him to my friends and coworkers.`,
+    loanStatus: "Closed Nov 2020",
+    loanType: "Refinance",
+    interestRate: "As expected",
+    closeOnTime: "Yes",
+    fees: "As expected",
+    tags: ["Conventional Loan"],
+  },
+  {
+    name: "GregTaylor9",
+    location: "Washington, DC",
+    date: "10/16/2020",
+    title: "Most knowledgeable, accessible lender I've ever used",
+    rating: 5,
+    text: `Scott was my broker as I worked through the fifth refinance I've completed on my condo. It had been 8 years since my last refi, so I still had a bunch of questions. And even though he had the best pricing that I found (from 5 different brokers), he was patient and thorough.`,
+    loanStatus: "Closed Aug 2020",
+    loanType: "Refinance",
+    interestRate: "Lower than expected",
+    closeOnTime: "Yes",
+    fees: "Lower than expected",
+    tags: ["30 year fixed", "Conventional Loan"],
+  },
+  {
+    name: "djolsen47",
+    location: "Kensington, MD",
+    date: "9/21/2020",
+    title: "Outstanding, responsive service",
+    rating: 5,
+    text: `Scott Moon did an excellent job as our loan officer for our recent refinance. He has excellent communication skills, responds quickly to messages or questions, and is a kind, reassuring voice in the midst of a big money transaction.`,
     loanStatus: "Closed Sep 2020",
     loanType: "Refinance",
     interestRate: "Lower than expected",
@@ -294,63 +164,40 @@ const reviews: Review[] = [
     tags: ["30 year fixed", "Conventional Loan"],
   },
   {
-    name: "JJANTONELLI64",
-    location: "Melbourne, FL",
-    date: "9/16/2020",
-    title: "Very clear and easy to understand",
+    name: "bmo124",
+    location: "Washington, DC",
+    date: "9/18/2020",
+    title: "The Best",
     rating: 5,
-    text: `DJ was amazing, I can't say enough about how easy he was to understand in basic terms. He explained all the details. I would highly recommend him to another person in the same situation. He followed up with me to make sure everything was completed to my satisfaction.`,
-    loanStatus: "Pre-qualified",
-    loanType: "Refinance",
-    tags: ["30 year fixed", "VA Loan"],
-  },
-  {
-    name: "Byrdie",
-    location: "Frederick, MD",
-    date: "9/14/2020",
-    title: "So helpful!",
-    rating: 5,
-    text: `DJ was absolutely wonderful to work with. He took the time to explain things to me in clear, simple language, was never pushy or rushed, and really helped me feel confident about my decision to refinance. So glad he was the person taking me through this process — he really helped relieve my stress.`,
-    loanStatus: "In progress",
-    loanType: "Refinance",
-    tags: ["30 year fixed", "Conventional Loan"],
-  },
-  {
-    name: "Colin G.",
-    location: "Woodbury, MN",
-    date: "6/12/2020",
-    title: "Excellent refinance experience",
-    rating: 5,
-    text: `I was skeptical about going with such a large mortgage lender, but was pleasantly surprised by the service we received from DJ at Quicken Loans. Not only was he able to find my wife and I a competitive rate with lower fees than expected, he followed up with us throughout the entire process.`,
-    loanStatus: "Closed Jun 2020",
-    loanType: "Refinance",
-    interestRate: "As expected",
-    closeOnTime: "Yes",
-    fees: "Lower than expected",
-    tags: ["Conventional Loan"],
-  },
-  {
-    name: "glass0621",
-    location: "El Paso, TX",
-    date: "4/10/2020",
-    title: "Fantastic Banker",
-    rating: 5,
-    text: `Our banker, DJ Green, was just super! From beginning of our process to closing, he was fabulous! He was always attentive, never blew us off nor gave the indication we were not important. He is trustworthy! If he is not sure about an answer, he will get confirmation.`,
-    loanStatus: "Closed Mar 2020",
+    text: `Scott is the best we've ever worked with. He's extremely responsive and knowledgeable, and he communicates often and very effectively. We cannot recommend him enough, you'd be crazy to work with anyone else!`,
+    loanStatus: "Closed Aug 2020",
     loanType: "Refinance",
     interestRate: "Lower than expected",
     closeOnTime: "Yes",
     fees: "As expected",
-    tags: ["30 year fixed", "VA Loan"],
   },
   {
-    name: "jamesmayerssr",
-    location: "Temecula, CA",
-    date: "4/7/2020",
-    title: "Best experience of having someone help when I need it.",
+    name: "emmaescobar77",
+    location: "Silver Spring, MD",
+    date: "7/21/2020",
+    title: "Scott was great to work with!!!",
     rating: 5,
-    text: `I am not good at writing a review of how I feel; but I want others to know about my journey of finding my way back in control of my life. I did not know how I'd pay next month's bills — this was each month, and it was making me stressed. DJ helped me turn things around.`,
-    loanStatus: "Closed Mar 2020",
+    text: `I was really nervous about buying a property but Scott was so great to work with. I first contacted him in 2018 when I was interested in purchasing a property. He gave me a lot of information about the difference between renting and buying. And was very helpful in explaining.`,
+    loanStatus: "Closed Apr 2020",
+    loanType: "Purchase",
+    interestRate: "As expected",
+    closeOnTime: "Yes",
+    fees: "Lower than expected",
+    tags: ["30 year fixed", "Conventional Loan", "First-time home buyer"],
+  },
+  {
+    name: "svetka8477",
+    location: "Ashburn, VA",
+    date: "7/15/2020",
+    title: "A+",
+    rating: 5,
+    text: `Scott and his team worked seamlessly to help me with my first refinance. I was more than pleased start to finish and have recommended WEI to many friends and family who also shared my same experience.`,
+    loanStatus: "Closed Jul 2020",
     loanType: "Refinance",
     interestRate: "Lower than expected",
     closeOnTime: "Yes",
@@ -358,85 +205,392 @@ const reviews: Review[] = [
     tags: ["30 year fixed", "Conventional Loan"],
   },
   {
-    name: "hollandbrian30",
-    location: "Westminster, MD",
-    date: "2/11/2020",
-    title: "Friendly, helpful and delivered as promised",
+    name: "Tom M.",
+    location: "Washington, DC",
+    date: "5/23/2020",
+    title: "Made everything very easy.",
     rating: 5,
-    text: `DJ was extremely helpful throughout the loan process. He delivered everything he promised upfront and even called weekly to check in and make sure everything was on track even after his part of the process was complete. He couldn't have been more professional and honest. I recommend talking to DJ.`,
+    text: `Scott was responsive and made the whole process very easy. I have recommended him to many friends and family members. When and if we need mortgage services in the future, he'll be the first person I call.`,
+    loanStatus: "Closed May 2020",
+    loanType: "Refinance",
+    interestRate: "As expected",
+    closeOnTime: "Yes",
+    fees: "As expected",
+    tags: ["30 year fixed", "Conventional Loan"],
+  },
+  {
+    name: "theoneandonly6",
+    location: "Temple Hills, MD",
+    date: "5/19/2020",
+    title: "No other Lender I'd recommend, Scott is THE BEST",
+    rating: 5,
+    text: `First and foremost, I would like to give Scott a HUGE Thank YOU!! Thank you again Scott for every aspect of service you provided me from the beginning to end on this journey. Scott, you were super responsive, dedicated and diligent. Scott has the ability to take on your home.`,
+    loanStatus: "Closed May 2020",
+    loanType: "Purchase",
+    interestRate: "Lower than expected",
+    closeOnTime: "Yes",
+    fees: "As expected",
+    tags: ["30 year fixed"],
+  },
+  {
+    name: "Beth R.",
+    location: "Gambrills, MD",
+    date: "5/12/2020",
+    title: "Excellent Customer Service!",
+    rating: 5,
+    text: `I was referred to Scott while shopping around for lenders and the best rate. Scott beat all others for both rates and closing costs. On top of that, he and his team were extremely responsive and always answered all of my questions.`,
+    loanStatus: "Closed Apr 2020",
+    loanType: "Refinance",
+    interestRate: "Lower than expected",
+    closeOnTime: "Yes",
+    fees: "Lower than expected",
+    tags: ["30 year fixed", "VA Loan"],
+  },
+  {
+    name: "user6540560",
+    location: "Washington, DC",
+    date: "5/5/2020",
+    title: "Always responsive, wants your business",
+    rating: 5,
+    text: `Although I'd been working with another lender, Scott swooped in and made me a few offers. Eventually he made one too good to turn down and he ended up with my business. Throughout the entire process, Scott was extremely responsive, knowledgeable, and followed-up with all my questions.`,
+    loanStatus: "Closed May 2020",
+    loanType: "Refinance",
+    interestRate: "As expected",
+    closeOnTime: "Yes",
+    fees: "As expected",
+    tags: ["30 year fixed", "Conventional Loan"],
+  },
+  {
+    name: "Johnny D.",
+    location: "Clarksburg, MD",
+    date: "5/1/2020",
+    title: "Excellent Customer Service!",
+    rating: 5,
+    text: `Scott was not only very detailed but also very patient. He was very responsive and was able to breakdown the details of the loan and guide me through the process. He was very clear and made sure I understood every detail.`,
+    loanStatus: "Closed Mar 2020",
+    loanType: "Refinance",
+    interestRate: "As expected",
+    closeOnTime: "Yes",
+    fees: "Lower than expected",
+    tags: ["30 year fixed", "Conventional Loan"],
+  },
+  {
+    name: "tammy reece315",
+    location: "Annapolis, MD",
+    date: "4/19/2020",
+    title: "Great communication and follow through",
+    rating: 5,
+    text: `Scott and his team were great to work with. He's very knowledgeable and always willing to answer questions along the way. They found the best deal for my refi and got it done in a very timely manner.`,
+    loanStatus: "Closed Feb 2020",
+    loanType: "Refinance",
+    interestRate: "Lower than expected",
+    closeOnTime: "Yes",
+    fees: "Lower than expected",
+    tags: ["15 year fixed", "Conventional Loan"],
+  },
+  {
+    name: "junabelpedro",
+    location: "Manteca, CA",
+    date: "4/8/2020",
+    title: "Excellent",
+    rating: 5,
+    text: `Made my refinancing process easy. Scott gave me options that I can choose from and gave me reasonable advice. I didn't expect that we would close this time because of the Coronavirus that's going on but he still continued working on my refinance. Thank you!`,
+    loanStatus: "Closed Mar 2020",
+    loanType: "Refinance",
+    interestRate: "As expected",
+    closeOnTime: "Yes",
+    fees: "Lower than expected",
+    tags: ["30 year fixed", "Conventional Loan"],
+  },
+  {
+    name: "James D",
+    location: "Alexandria, VA",
+    date: "4/5/2020",
+    title: "Refinance",
+    rating: 5,
+    text: `Scott was awesome in refinancing my loan. He's a true professional and looks out for the best interest of his clients. It's easy to trust Scott and he is very accessible whenever needed.`,
     loanStatus: "Closed Feb 2020",
     loanType: "Refinance",
     interestRate: "As expected",
     closeOnTime: "Yes",
     fees: "As expected",
-    tags: ["30 year fixed", "Conventional Loan"],
   },
   {
-    name: "zuser201611192038170",
-    location: "North Richland Hills, TX",
-    date: "1/24/2020",
-    title: "DJ Green",
+    name: "Victoria M.",
+    location: "Kensington, MD",
+    date: "3/26/2019",
+    title: "Professional and patient",
     rating: 5,
-    text: `DJ was very supportive since his first call to inquire about my wife's and my needs. He was so understanding with my questions and my asking the same question many times. I was very impressed with Quicken Loans' support of me as well wanting to monitor DJ's performance.`,
-    loanStatus: "In progress",
-    loanType: "Refinance",
-    tags: ["30 year fixed", "Conventional Loan"],
-  },
-  {
-    name: "Annette Williams",
-    location: "Saint Augustine, FL",
-    date: "1/27/2020",
-    title: "Best Lender Ever",
-    rating: 5,
-    text: `Having experienced the sell and purchase of four homes through various lenders, I can honestly say my experience with Mr. Green was an unexpected beacon of light. His knowledge, experience, people skills and accessibility made it possible to efficiently navigate our complete lending process within four weeks.`,
-    loanStatus: "Closed Jan 2020",
+    text: `Scott has always been patient, knowledgeable, thorough and timely. I just finished refinancing my home and it was stress-free! Scott has always addressed my concerns and questions with honesty, and patience. He's been professional every step of the way.`,
+    loanStatus: "Closed Feb 2020",
     loanType: "Refinance",
     interestRate: "Lower than expected",
     closeOnTime: "Yes",
-    fees: "As expected",
+    fees: "Lower than expected",
+    tags: ["30 year fixed", "Conventional Loan", "First-time home buyer"],
+  },
+  {
+    name: "Debo",
+    location: "Fairburn, GA",
+    date: "1/28/2020",
+    title: "Professional, Considerate, Patient and Honest",
+    rating: 5,
+    text: `Scott is very helpful and professional. One thing that made him different from the other lenders is the patience he had with me and he educated me throughout the whole process. I look forward to working with him in the future.`,
+    loanStatus: "Closed Dec 2019",
+    loanType: "Refinance",
+    interestRate: "As expected",
+    closeOnTime: "Yes",
+    fees: "Lower than expected",
+    tags: ["15 year fixed", "Conventional Loan"],
+  },
+  {
+    name: "TONYb",
+    location: "Bowie, MD",
+    date: "1/28/2020",
+    title: "Accommodation and Knowledge is everything!",
+    rating: 5,
+    text: `Scott Moon comes highly recommended and I was not disappointed! Scott and his team were very helpful and on top of things throughout the process. Communication is also important for me and they were very responsive in whatever questions I had and always kept me updated.`,
+    loanStatus: "Closed Jan 2020",
+    loanType: "Refinance",
+    interestRate: "As expected",
+    closeOnTime: "Yes",
+    fees: "Lower than expected",
     tags: ["30 year fixed", "Conventional Loan"],
   },
   {
-    name: "lwnottoday",
-    location: "Oldsmar, FL",
-    date: "9/27/2019",
-    title: "LoanDepot",
+    name: "JenniferNicoleSanche",
+    location: "Yucaipa, CA",
+    date: "10/21/2019",
+    title: "Excellent Lender",
     rating: 5,
-    text: `I can't express how pleased I am with this lender. They are the best people to work with. DJ Green is my personal consultant and he is great. Everything went smoothly. If you want quality people, LoanDepot is the lending company to use.`,
+    text: `I refinanced my home and Scott was so helpful and quick to respond. He found the best deals for me, so that when I closed I almost brought nothing to the table to refinance my home. He cares and finds what is best for your situation.`,
+    loanStatus: "Closed Oct 2019",
+    loanType: "Refinance",
+    interestRate: "Lower than expected",
+    closeOnTime: "Yes",
+    fees: "Lower than expected",
+    tags: ["30 year fixed", "Conventional Loan"],
+  },
+  {
+    name: "whozdamak",
+    location: "Antioch, CA",
+    date: "10/12/2019",
+    title: "Top notch customer service",
+    rating: 5,
+    text: `My wife and I repeatedly said to each other that it felt as if we were Scott's only clients. The majority of our concerns were responded to within the hour. We went in with a plan and closed on a deal that was better than we anticipated.`,
+    loanStatus: "Closed Oct 2019",
+    loanType: "Refinance",
+    interestRate: "Lower than expected",
+    closeOnTime: "Yes",
+    tags: ["30 year fixed", "Conventional Loan"],
+  },
+  {
+    name: "zuser201503221900111",
+    location: "Simi Valley, CA",
+    date: "9/18/2019",
+    title: "Scott Moon is the best!!!!",
+    rating: 5,
+    text: `Scott contacted me when we were in the middle of refinancing with another broker. I'm glad we connected: He is so professional, helpful and walks you through every detail that you need help with. This was extremely confusing for my husband and I to understand all the details.`,
+    loanStatus: "Closed Sep 2019",
+    loanType: "Refinance",
+    interestRate: "Higher than expected",
+    closeOnTime: "Yes",
+    fees: "Lower than expected",
+    tags: ["30 year fixed", "Conventional Loan"],
+  },
+  {
+    name: "cspina2",
+    location: "Danville, CA",
+    date: "9/11/2019",
+    title: "5 star rating for lender Scott Moon",
+    rating: 5,
+    text: `Scott Moon was professional, personable and made my refinance seamless. Scott was able to get a lower interest rate than I expected and closed on time.`,
     loanStatus: "Closed Sep 2019",
     loanType: "Refinance",
     interestRate: "Lower than expected",
     closeOnTime: "Yes",
-    fees: "As expected",
-    tags: ["30 year fixed", "Conventional Loan"],
+    fees: "Lower than expected",
+    tags: ["30 year fixed", "Conventional Loan", "Low credit score"],
   },
   {
-    name: "gas2660",
-    location: "Riviera Beach, FL",
-    date: "8/29/2019",
-    title: "DJ Green at Loan Depot",
+    name: "Penny Hile",
+    location: "Lincoln, CA",
+    date: "9/5/2019",
+    title: "Scott Moon is the best!",
     rating: 5,
-    text: `DJ was wonderful to work with. No matter how many silly questions we asked he remained kind and helpful. Our computer skills are not what you could call good — he was always there ready and willing to walk us through everything. I cannot imagine having a better experience.`,
-    loanStatus: "Closed Aug 2019",
-    loanType: "Refinance",
-    interestRate: "Lower than expected",
-    closeOnTime: "Yes",
-    fees: "As expected",
-    tags: ["30 year fixed", "Conventional Loan"],
-  },
-  {
-    name: "chrisdaugherty57",
-    location: "Bushnell, FL",
-    date: "8/23/2019",
-    title: "Home Refinance",
-    rating: 5,
-    text: `DJ and everyone I dealt with at Loan Depot were very pleasant to work with. Everything went very smoothly. I am happy with the job they have done. Thanks to everyone and for your hard work.`,
-    loanStatus: "Closed Aug 2019",
+    text: `I would like to thank Scott for all his help in putting this loan together. He made a potentially stressful situation very stress-free, providing me with detailed information and explaining everything in an easily understood manner. And the entire process took less than a month from our first contact.`,
+    loanStatus: "Closed Sep 2019",
     loanType: "Refinance",
     interestRate: "As expected",
     closeOnTime: "Yes",
+    fees: "Lower than expected",
+    tags: ["30 year fixed", "Conventional Loan"],
+  },
+  {
+    name: "Evan Law",
+    location: "Culpeper, VA",
+    date: "7/18/2019",
+    title: "Absolutely outstanding!",
+    rating: 5,
+    text: `Scott was incredibly helpful in answering a multitude of questions, in providing the best solutions available, and in ensuring that my wife and I achieved our desired outcome. I'm so pleased I found him!`,
+    loanStatus: "Closed Jul 2019",
+    loanType: "Purchase",
+    interestRate: "Lower than expected",
+    closeOnTime: "Yes",
+    fees: "Lower than expected",
+    tags: ["30 year fixed", "Conventional Loan"],
+  },
+  {
+    name: "Andy Z.",
+    location: "Alexandria, VA",
+    date: "7/13/2019",
+    title: "The best customer service",
+    rating: 5,
+    text: `Scott is very focused on customer service—whenever you have a question, he always makes an effort to provide support and assistance, even late evenings or early mornings. I can count on Scott to answer my questions. Great work!`,
+    loanStatus: "Closed Jun 2019",
+    loanType: "Purchase",
+    interestRate: "Lower than expected",
+    closeOnTime: "Yes",
     fees: "As expected",
-    tags: ["30 year fixed", "FHA Loan", "Low credit score"],
+  },
+  {
+    name: "user2596447",
+    location: "Charlotte Hall, MD",
+    date: "7/5/2019",
+    title: "Excellent Service",
+    rating: 5,
+    text: `Scott was on his game from the minute we spoke. Always and promptly answered any questions through the entire loan process, and closed within 30 days. The entire home purchase was smooth and as explained with no hiccups along the way. Scott contacted before closing and followed up after.`,
+    loanStatus: "Closed Jun 2019",
+    loanType: "Purchase",
+    interestRate: "As expected",
+    closeOnTime: "Yes",
+    fees: "As expected",
+    tags: ["30 year fixed", "Conventional Loan"],
+  },
+  {
+    name: "Paula G",
+    location: "Lanham Seabrook, MD",
+    date: "3/27/2019",
+    title: "Outstanding Service!",
+    rating: 5,
+    text: `Mr. Scott Moon, I wanted to take the time to express my appreciation for the efficient and well organized lending services you and your company provided me! You made my loan process simple and as transparent as possible. You were attentive, never a delay and always forthright when more info was needed.`,
+    loanStatus: "Closed Mar 2019",
+    loanType: "Purchase",
+    interestRate: "As expected",
+    closeOnTime: "Yes",
+    fees: "As expected",
+    tags: ["30 year fixed", "FHA Loan", "First-time home buyer"],
+  },
+  {
+    name: "JLi",
+    location: "Ashburn, VA",
+    date: "3/20/2019",
+    title: "Highly recommended!",
+    rating: 5,
+    text: `Scott is an absolute professional and was incredibly helpful throughout every step of our buying process. Extremely knowledgeable and most importantly - always available, hard working and personable. Very thankful for his approach and personality.`,
+    loanStatus: "Closed Dec 2018",
+    loanType: "Purchase",
+    interestRate: "Lower than expected",
+    closeOnTime: "Yes",
+    fees: "Lower than expected",
+  },
+  {
+    name: "James",
+    location: "Alexandria, VA",
+    date: "3/11/2019",
+    title: "Scott is AWESOME!",
+    rating: 5,
+    text: `Scott is an excellent resource for assistance on buying a home. He was efficient, helpful and provided intelligent insight throughout the entire process. I would highly recommend utilizing Scott as your go-to for assistance on any property!`,
+    loanStatus: "Closed Jan 2019",
+    loanType: "Purchase",
+    interestRate: "As expected",
+    closeOnTime: "Yes",
+    fees: "Lower than expected",
+    tags: ["30 year fixed", "Conventional Loan", "First-time home buyer"],
+  },
+  {
+    name: "cemitch15",
+    location: "Fairburn, GA",
+    date: "1/12/2019",
+    title: "Scott Moon is Awesome",
+    rating: 5,
+    text: `Scott is really the Man when it comes down to getting approved for a Mortgage loan, he is very patient and smart when it comes to any minor issues, for every bump in the road I came across he helped!`,
+    loanStatus: "Closed May 2018",
+    loanType: "Purchase",
+    interestRate: "Lower than expected",
+    closeOnTime: "Yes",
+    fees: "Lower than expected",
+    tags: ["30 year fixed", "FHA Loan", "First-time home buyer"],
+  },
+  {
+    name: "jmlee11194",
+    location: "Rockville, MD",
+    date: "12/19/2018",
+    title: "Excellent above and beyond brokerage service",
+    rating: 5,
+    text: `Scott my loan officer has been extremely helpful throughout the course of assisting with my mortgage loan. Not only did he help me with my Loan, he also helped answer and/or point me to the right direction with all my house buying headaches. I highly recommend using Scott.`,
+    loanStatus: "Closed Oct 2018",
+    loanType: "Purchase",
+    interestRate: "As expected",
+    closeOnTime: "Yes",
+    fees: "Lower than expected",
+    tags: ["30 year fixed", "Conventional Loan", "Low credit score"],
+  },
+  {
+    name: "jennireves",
+    location: "Atlanta, GA",
+    date: "8/30/2018",
+    title: "Amazing customer service",
+    rating: 5,
+    text: `Scott Moon, and the WEI Mortgage team, walked us through every detail of the mortgage process. They carefully guided us, taking time to review and answer questions whenever we needed. We are very pleased with the service we received.`,
+    loanStatus: "Closed Aug 2018",
+    loanType: "Purchase",
+    interestRate: "As expected",
+    closeOnTime: "Yes",
+    fees: "As expected",
+    tags: ["30 year fixed", "FHA Loan"],
+  },
+  {
+    name: "latoyasinclair ls",
+    location: "East Point, GA",
+    date: "7/16/2018",
+    title: "Excellent to Work With",
+    rating: 5,
+    text: `Working with Scott has been wonderful, he is very patient in explaining the entire loan process. He answered every question I had in a timely manner and gave me great advice. I will recommend him to everyone I know.`,
+    loanStatus: "Closed Jul 2018",
+    loanType: "Purchase",
+    interestRate: "As expected",
+    closeOnTime: "Yes",
+    fees: "Lower than expected",
+    tags: ["30 year fixed", "FHA Loan", "First-time home buyer"],
+  },
+  {
+    name: "Sonia Phuyal",
+    location: "Silver Spring, MD",
+    date: "8/2/2018",
+    title: "Great",
+    rating: 5,
+    text: `He was very helpful and reliable, I would totally recommend him to anyone. He answered my questions and concerns promptly and I can't ask for more! Just love his attitude and energy towards my project.`,
+    loanStatus: "Closed Jul 2018",
+    loanType: "Purchase",
+    interestRate: "As expected",
+    closeOnTime: "Yes",
+    fees: "As expected",
+    tags: ["30 year fixed", "Conventional Loan", "First-time home buyer"],
+  },
+  {
+    name: "aedc",
+    location: "Washington, DC",
+    date: "5/13/2018",
+    title: "Responsive, helpful, and easy to work with",
+    rating: 5,
+    text: `Scott was great. My husband and I decided to move quickly on a house, and Scott moved quickly to provide us with the information we needed and to promptly put us in a place to get our financing in place. He was responsive and helpful throughout the process of qualifying.`,
+    loanStatus: "Closed Feb 2018",
+    loanType: "Purchase",
+    interestRate: "As expected",
+    closeOnTime: "Yes",
+    fees: "As expected",
+    tags: ["15 year fixed", "First-time home buyer"],
   },
 ];
 
@@ -446,7 +600,7 @@ const renderStars = (rating: number) => {
     <Star
       key={i}
       className={`h-4 w-4 ${
-        i < rating ? "fill-[#0F6D69] text-[#0F6D69]" : "text-midnight-ink/20"
+        i < rating ? "fill-[#212843] text-[#212843]" : "text-midnight-ink/20"
       }`}
       strokeWidth={i < rating ? 0 : 1.5}
     />
@@ -466,11 +620,11 @@ function ReviewCard({ review }: { review: Review }) {
     <Reveal>
       <div className="flex h-full flex-col rounded-[20px] border border-border bg-lift-white p-6 shadow-card-soft transition-all duration-300 hover:-translate-y-1">
         <div className="flex items-start gap-4">
-          <div className="h-12 w-12 shrink-0 overflow-hidden rounded-full bg-[#0F6D69]/10">
+          <div className="h-12 w-12 shrink-0 overflow-hidden rounded-full bg-[#212843]/10">
             <Image
               src={`https://ui-avatars.com/api/?name=${encodeURIComponent(
                 review.name,
-              )}&background=A87E62&color=fff&size=48`}
+              )}&background=212843&color=fff&size=48`}
               alt={review.name}
               width={48}
               height={48}
@@ -507,7 +661,7 @@ function ReviewCard({ review }: { review: Review }) {
           <button
             type="button"
             onClick={() => setExpanded(!expanded)}
-            className="mt-3 self-start text-sm font-medium text-[#0F6D69] hover:text-[#96694f] transition-colors"
+            className="mt-3 self-start text-sm font-medium text-[#212843] hover:text-[#161b2e] transition-colors"
           >
             {expanded ? "Show less" : "Read more"}
           </button>
@@ -519,7 +673,7 @@ function ReviewCard({ review }: { review: Review }) {
             {review.tags.map((tag) => (
               <span
                 key={tag}
-                className="rounded-full bg-[#0F6D69]/10 px-2.5 py-0.5 text-xs text-[#0F6D69]"
+                className="rounded-full bg-[#212843]/10 px-2.5 py-0.5 text-xs text-[#212843]"
               >
                 {tag}
               </span>
@@ -538,7 +692,7 @@ function ReviewCard({ review }: { review: Review }) {
 
         {/* Lender reply */}
         {review.reply && (
-          <div className="mt-3 rounded-lg bg-[#0F6D69]/5 p-3 text-xs italic text-midnight-ink/70">
+          <div className="mt-3 rounded-lg bg-[#212843]/5 p-3 text-xs italic text-midnight-ink/70">
             {review.reply}
           </div>
         )}
@@ -552,16 +706,16 @@ export default function ReviewsPage() {
   return (
     <PageShell
       eyebrow="Reviews"
-      title="Donnell Green Client Reviews"
-      description="Real stories from real families who have purchased or refinanced homes with Donnell Green at Fairway Independent Mortgage."
+      title="Scott J Moon Client Reviews"
+      description="Real stories from real families who have purchased or refinanced homes with Scott J Moon. Reviews are from Scott's time at WEI Mortgage."
     >
       <div className="mx-auto max-w-[1000px] space-y-20">
         {/* ─── Hero / Intro ────────────────────────────────────────── */}
         <Reveal>
           <div className="rounded-[24px] border border-border bg-lift-white p-8 text-center shadow-card-soft transition-all duration-300 hover:-translate-y-1 sm:p-12">
             <div className="flex justify-center">
-              <div className="rounded-full bg-[#0F6D69]/10 p-4">
-                <MessageCircle className="h-8 w-8 text-[#0F6D69]" />
+              <div className="rounded-full bg-[#212843]/10 p-4">
+                <MessageCircle className="h-8 w-8 text-[#212843]" />
               </div>
             </div>
             <h2 className="mt-4 font-display text-3xl font-bold text-midnight-ink sm:text-4xl">
@@ -569,7 +723,8 @@ export default function ReviewsPage() {
             </h2>
             <p className="mt-4 text-sm text-midnight-ink/60 max-w-2xl mx-auto">
               Real stories from real clients who have purchased or refinanced
-              with Donnell Green at Fairway Independent Mortgage.
+              with Scott J Moon. The reviews below are from Scott's time at WEI
+              Mortgage and reflect his commitment to client service.
             </p>
 
             {/* Rating summary */}
@@ -578,22 +733,13 @@ export default function ReviewsPage() {
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
-                    className="h-5 w-5 fill-[#0F6D69] text-[#0F6D69]"
+                    className="h-5 w-5 fill-[#212843] text-[#212843]"
                   />
                 ))}
                 <span className="ml-2 text-sm font-medium text-midnight-ink">
-                  5 Stars ∙ 39 Reviews
+                  5 Stars ∙ 67 Reviews
                 </span>
               </div>
-              <a
-                href="https://www.zillow.com/lender-profile/dgreen82/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-lift-white px-4 py-2 text-xs font-medium text-midnight-ink transition-colors hover:bg-midnight-ink/5"
-              >
-                View on Zillow
-                <ExternalLink className="h-3.5 w-3.5" />
-              </a>
             </div>
           </div>
         </Reveal>
@@ -605,18 +751,18 @@ export default function ReviewsPage() {
           ))}
         </div>
 
-        {/* ─── Verified by Trustindex ──────────────────────────────── */}
+        {/* ─── Verified Banner ─────────────────────────────────────── */}
         <Reveal>
           <div className="text-center">
-            <span className="inline-block rounded-full bg-[#0F6D69]/10 px-5 py-2 text-xs font-medium text-[#0F6D69]">
-              Verified by Zillow ∙ 39 Reviews
+            <span className="inline-block rounded-full bg-[#212843]/10 px-5 py-2 text-xs font-medium text-[#212843]">
+              Verified Client Reviews · 67 Total
             </span>
           </div>
         </Reveal>
 
         {/* ─── Quote Banner ────────────────────────────────────────── */}
         <Reveal>
-          <section className="relative overflow-hidden rounded-[24px] bg-[#0F6D69] p-8 text-center text-white shadow-card-soft transition-all duration-300 hover:-translate-y-1 sm:p-12">
+          <section className="relative overflow-hidden rounded-[24px] bg-[#212843] p-8 text-center text-white shadow-card-soft transition-all duration-300 hover:-translate-y-1 sm:p-12">
             <div className="absolute inset-0 opacity-10">
               <div className="absolute -left-20 -top-20 h-80 w-80 rounded-full bg-white/20 blur-3xl" />
               <div className="absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-white/20 blur-3xl" />
@@ -628,24 +774,24 @@ export default function ReviewsPage() {
                 them feel completely satisfied and respected throughout the
                 entire mortgage process."
               </blockquote>
-              <p className="mt-3 text-white/70">— Donnell Green</p>
+              <p className="mt-3 text-white/70">— Scott J Moon</p>
             </div>
           </section>
         </Reveal>
 
-        {/* ─── Why Choose Donnell ────────────────────────────────────── */}
+        {/* ─── Why Choose Scott ────────────────────────────────────── */}
         <Reveal>
           <section className="rounded-[24px] border border-border bg-lift-white p-8 shadow-card-soft transition-all duration-300 hover:-translate-y-1 sm:p-12">
             <div className="text-center">
-              <span className="text-sm font-semibold uppercase tracking-wider text-[#0F6D69]">
-                Why Choose Donnell
+              <span className="text-sm font-semibold uppercase tracking-wider text-[#212843]">
+                Why Choose Scott
               </span>
               <h2 className="mt-3 font-display text-3xl font-bold text-midnight-ink">
                 Experience You Can Trust
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-sm text-midnight-ink/70 leading-relaxed">
-                6+ years in mortgage, 10+ in finance, 11+ in sales, and 21+ in
-                customer service — combined to make your transaction seamless.
+                A client-first approach built on listening carefully,
+                communicating clearly, and following through on commitments.
               </p>
             </div>
             <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -675,7 +821,7 @@ export default function ReviewsPage() {
                   key={idx}
                   className="flex flex-col items-center text-center"
                 >
-                  <div className="rounded-full bg-[#0F6D69]/10 p-3 text-[#0F6D69]">
+                  <div className="rounded-full bg-[#212843]/10 p-3 text-[#212843]">
                     <item.icon className="h-6 w-6" strokeWidth={1.8} />
                   </div>
                   <h3 className="mt-3 font-display text-lg font-semibold text-midnight-ink">
@@ -695,7 +841,7 @@ export default function ReviewsPage() {
           <section className="relative overflow-hidden rounded-[24px] border border-border bg-lift-white p-8 shadow-card-soft transition-all duration-300 hover:-translate-y-1 sm:p-12">
             <div className="flex flex-col items-center gap-8 lg:flex-row lg:text-left">
               <div className="flex-1">
-                <span className="text-sm font-semibold uppercase tracking-wider text-[#0F6D69]">
+                <span className="text-sm font-semibold uppercase tracking-wider text-[#212843]">
                   Ready to Get Started?
                 </span>
                 <h2 className="mt-2 font-display text-3xl font-bold text-midnight-ink">
@@ -708,30 +854,26 @@ export default function ReviewsPage() {
                   here.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
-                  <Link
-                    href="https://mobile.fairwaynow.com/homehub/signup/donnell.green@fairwaymc.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button className="bg-[#0F6D69] text-white shadow-md transition-all duration-300 hover:bg-[#96694f] hover:shadow-lg">
-                      Apply Online
+                  <Link href="/contact">
+                    <Button className="bg-[#212843] text-white shadow-md transition-all duration-300 hover:bg-[#161b2e] hover:shadow-lg">
+                      Get Pre-Qualified
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>
-                  <Link href="s">
+                  <Link href="/loan-options">
                     <Button
                       variant="outline"
                       className="border-midnight-ink/20 text-midnight-ink hover:bg-midnight-ink/5"
                     >
-                      View All Products
+                      View All Loan Options
                     </Button>
                   </Link>
                 </div>
               </div>
               <div className="shrink-0">
-                <div className="flex h-48 w-48 items-center justify-center rounded-full bg-[#0F6D69]/5">
+                <div className="flex h-48 w-48 items-center justify-center rounded-full bg-[#212843]/5">
                   <BookOpen
-                    className="h-24 w-24 text-[#0F6D69]/30"
+                    className="h-24 w-24 text-[#212843]/30"
                     strokeWidth={1}
                   />
                 </div>
